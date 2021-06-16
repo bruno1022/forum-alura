@@ -1,7 +1,9 @@
 package br.com.alura.forum.modelo;
 
+@Entity
 public class Curso {
 
+	@Id @GeneretadValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
 	private String categoria;
